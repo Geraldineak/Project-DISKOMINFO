@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/input-karyawan', function () {
+    return view('karyawan');
+});
+Route::get('/laporan-kerja-kabid', function (){
+    return view('laporan_kerja_kabid');
+});
+Route::get('/laporan-kerja-kasi', function (){
+    return view('laporan_kerja_kasi');
+});
+Route::get('index-outsource', function (){
+    return view('index_outsource');
+});
+Route::get('halaman-login', function (){
+    return view('login');
+});
+
