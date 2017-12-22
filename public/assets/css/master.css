@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  outline:none;
+}
+
+li{list-style-type: none;}
+
+/* Take the font from font face*/
+@font-face{
+  font-family:Roboto Medium;
+  src: url('../fonts/roboto/Roboto-Medium.ttf');
+}
+
+@font-face{
+  font-family:Roboto Light;
+  src: url('../fonts/roboto/Roboto-Light.ttf');
+}
+
+
+body{
+  font-family:Roboto Light;
+  background:#e8e8e8;
+  font-size: 13pt !important;
+}
+
+/*styling the heading*/
+h2, h3, h4 { color: #333; }
+
+h2 {font: 24px 'Roboto Medium'; font-weight: bold;}
+h3 {font: 18px 'Roboto Medium'; font-weight: bold;}
+h4 {font: 14px 'Roboto Medium'; font-weight: bold;}
+h5 {font: 12px 'Roboto Medium'; font-weight: bold;}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after{
+  content:"";
+  border-bottom: 2px solid black;
+}
+
+a {
+	font-family: 'Roboto Medium';
+  text-decoration: none;
+}
+a:hover, a:active{
+  text-decoration: none;
+}
+
+i{margin:5px 10px 0 0;}
+
+/* main css */
+.text-center{text-align:center;}
+.right{float:right;}
+.left{float:left;}
+
+.title{
+  margin:30px auto;
+}
+.horizontal-border{
+  width:100px;
+  height:3px;
+  background:#666;
+  border-radius: 20px;
+  margin:20px auto;
+}
+/* Header */
+.header{
+  background:blue;
+  color:#fff;
+  text-shadow: 1px 1px 1px black;
+}
+
+/*Form Pasien*/
+input[type="text"]{
+  width:100%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  font-family: Roboto Medium;
+  padding-left:3px;
+  margin-bottom:10px;
+}
+
+input[type="text"]:focus{
+  border: 2px solid lightblue;
+  box-shadow: 1px 0.5px gray;
+}
+
+/*logbook*/
