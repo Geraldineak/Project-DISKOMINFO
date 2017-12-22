@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="resources/assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="resources/assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="resources/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/assets/css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
