@@ -44,11 +44,11 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
-                <a class="dropdown-toggle" href="laporan_kerja_kabid.php">Laporan Kerja</a>
+                <a class="dropdown-toggle" href="laporan-kerja-kabid">Laporan Kerja</a>
             </li>
             <br>
             <div class="form-group one-group text-center">
-            <button type="button" class="btn btn-primary btn-logout">Logout</button>
+            <button type="button" class="btn btn-primary btn-logout" href="halaman-login">Logout</button>
         </div>
         </ul>
     </div>

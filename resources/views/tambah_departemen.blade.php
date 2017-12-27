@@ -1,56 +1,62 @@
-@extends('base')
+@extends('base_departemen')
 @section('content')
 <section class="main-section">
 <div class="content">
 <div class="container container-body-index">
     <div class="row">
-        <div class="col-md-12 font-head">
-            <h3>SPLK</h3>
-        </div>
-    <section class="col-md-12 table" style="overflow-x: auto;">
-    <div class="col-md-12 header-form">
-            <h2>Laporan Kerja</h2>
+    <div class="col-md-12 font-head">
+        <h3>SPLK</h3>
     </div>
+    <div class="col-md-12 form-kelas">
+        <div class="col-md-12 header-form">
+            <h2>Tambah Departement</h2>
+        </div>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="">Nama Departement</label>
+                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" name="submit" class="form-control" require>
+            </div>
+        </form>
+    </div>
+    <section class="col-md-12 table" style="overflow-x: auto;">
     <table class="table table-inverse ">
     <thead>
         <tr>
             <th>No.</th>
-            <th>Nama</th>
-            <th>Status</th>
+            <th>Nama Departement</th>
             <th>Opsi</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>1.</td>
-            <td>Ilham Saputra</td>
-            <td>Disetujui</td>
+            <td>Departement Keuangan</td>
             <td>
-                <input type="submit" value="lihat" class="btn-lihat">
+                <input type="submit" value="Hapus" class="btn-hapus">
             </td>
         </tr>
         <tr>
-            <td>1.</td>
-            <td>Ilham Saputra</td>
-            <td>Disetujui</td>
+            <td>2.</td>
+            <td>Departement Sekretariat</td>
             <td>
-                <input type="submit" value="lihat" class="btn-lihat">
+                <input type="submit" value="Hapus" class="btn-hapus">
             </td>
         </tr>
         <tr>
-            <td>1.</td>
-            <td>Ilham Saputra</td>
-            <td>Disetujui</td>
+            <td>3.</td>
+            <td>Departement Kominfo</td>
             <td>
-                <input type="submit" value="lihat" class="btn-lihat">
+                <input type="submit" value="Hapus" class="btn-hapus">
             </td>
         </tr>
         <tr>
-            <td>1.</td>
-            <td>Ilham Saputra</td>
-            <td>Disetujui</td>
+            <td>4.</td>
+            <td>Departement Dokumentasi</td>
             <td>
-                <input type="submit" value="lihat" class="btn-lihat">
+                <input type="submit" value="Hapus" class="btn-hapus">
             </td>
         </tr>
     </tbody>
@@ -74,8 +80,6 @@
             </div>
     </div>
 </section>
-    </div>
 </div>
 </div>
 </section>
-@endsection

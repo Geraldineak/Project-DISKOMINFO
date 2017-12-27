@@ -29,4 +29,13 @@ Route::get('index-outsource', function (){
 Route::get('halaman-login', function (){
     return view('login');
 });
+Route::get('tambah-departemen', function (){
+    return view('tambah_departemen');
+});
+Route::get('lihat-laporan', function (){
+    return view('lihat_laporan');
+});
+Route::get('kirim-laporan', function (){
+    return view('kirim_laporan_outsource');
+});
 

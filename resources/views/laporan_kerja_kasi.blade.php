@@ -1,5 +1,7 @@
 @extends('base_kasi')
 @section('content')
+<section class="main-content">
+<div class="content">
 <div class="container container-body-index">
     <div class="row">
     <div class="col-md-12 font-head">
@@ -17,7 +19,7 @@
                     <th>Tanggal</th>
                     <th>Waktu</th>
                     <th>Nama Laporan</th>
-                    <th>User</th>
+                    <th>Pengirim</th>
                     <th>NI Karyawan</th>
                     <th>Status</th>
                     <th>Opsi</th>
@@ -64,6 +66,7 @@
                     </td>
                     <td>
                         <button type="submit" class="btn-terima">Menyetujui</button>
+                        <button type="submit" class="btn-lihat">Lihat</button>
                         <button type="submit" class="btn-hapus">Menolak</button>
                     </td>
                 </tr>
@@ -78,8 +81,9 @@
                         <label for="">Pending</label>
                     </td>
                     <td>
-                    <button type="submit" class="btn-terima">Menyetujui</button>
-                    <button type="submit" class="btn-hapus">Menolak</button>
+                        <button type="submit" class="btn-terima">Menyetujui</button>
+                        <button type="submit" class="btn-lihat">Lihat</button>
+                        <button type="submit" class="btn-hapus">Menolak</button>
                     </td>
                 </tr>
                 <tr>
@@ -93,8 +97,9 @@
                         <label for="">Pending</label>
                     </td>
                     <td>
-                    <button type="submit" class="btn-terima">Menyetujui</button>
-                    <button type="submit" class="btn-hapus">Menolak</button>
+                        <button type="submit" class="btn-terima">Menyetujui</button>
+                        <button type="submit" class="btn-lihat">Lihat</button>
+                        <button type="submit" class="btn-hapus">Menolak</button>
                     </td>
                 </tr>
             </tbody>
@@ -122,4 +127,6 @@
         </div>
     </div>
 </div>
+</div>
+</section>
 @endsection

@@ -1,5 +1,7 @@
 @extends('base')
 @section('content')
+<section class="main-section>"
+<div class="content">
 <div class="container container-body-index">
     <div class="row">
     <div class="col-md-12 font-head">
@@ -25,19 +27,18 @@
             <div class="form-group">
                 <label for="">Jabatan</label>
                 <select name="jabatan" id="jabatan" class="form-control">
+                    <option value="">Outsourcing</option>
                     <option value="">Kasi</option>
                     <option value="">Kabid</option>
-                    <option value="">Karyawan</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="">Kasi</label>
-                <input type="text" class="form-control" name="kasi" id="kasi" require>
-            </div>
-            <div class="form-group">
-                <label for="">Kabid</label>
-                <input type="text" class="form-control" name="kabid" id="kabid" require>
-            </div>
+                <label for="">Departement</label>
+                <select name="departement" id="" class="form-control">
+                    <option value="departement_keuangan">Departement Keuangan</option>
+                    <option value="departement_keuangan">Departement Sekretariat</option>
+                </select>
+             </div>
             <div class="form-group">
                 <label for="">Username</label>
                 <input type="text" name="username" id="username" class="form-control" require>
@@ -156,4 +157,6 @@
     </div>
 </section>
 </div>
+</div>
+</section>
 @endsection

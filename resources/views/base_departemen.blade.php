@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -51,11 +52,11 @@
             </li>
             <li class="list-group-item">
                 <i class="fa fa-building"></i>
-                <a class="dropdown-toggle" href="tambah-departement">Departement</a>
+                <a class="dropdown-toggle" href="tambah-departemen">Departement</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
-                <a class="dropdown-toggle" href="laporan-kerja">Laporan Kerja</a>
+                <a class="dropdown-toggle" href="laporan-kerja.php">Laporan Kerja</a>
             </li>
             <br>
             <div class="form-group one-group text-center">
@@ -64,6 +65,6 @@
         </ul>
     </div>
 </div>
-@yield('content')
+<!--Akhir menu-->
 </body>
 </html>

@@ -1,5 +1,7 @@
 @extends('base')
 @section('content')
+<section class="main-section">
+<div class="content">
 <div class="container container-body-index">
     <div class="row">
         <div class="col-md-12">
@@ -104,4 +106,6 @@
         </section>
     </div>
 </div>
+</div>
+</section>
 @endsection

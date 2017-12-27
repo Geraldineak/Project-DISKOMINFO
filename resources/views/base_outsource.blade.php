@@ -43,12 +43,16 @@
     <div class="list-menu">
         <ul class="list-group">
             <li class="list-group-item">
+                <i class="fa fa-home"></i>
+                <a class="dropdown-toggle" href="index_outsource">Home</a>
+            </li>
+            <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
-                <a class="dropdown-toggle" href="index_outsource.php">Kirim Laporan</a>
+                <a class="dropdown-toggle" href="kirim-laporan">Kirim Laporan</a>
             </li>
             <br>
             <div class="form-group one-group text-center">
-                <button type="button" class="btn btn-primary btn-logout">Logout</button>
+                <button type="button" class="btn btn-primary btn-logout" href="halaman-login">Logout</button>
             </div>
         </ul>
     </div>
