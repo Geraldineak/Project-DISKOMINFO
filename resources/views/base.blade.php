@@ -51,7 +51,7 @@
             </li>
             <li class="list-group-item">
                 <i class="fa fa-building"></i>
-                <a class="dropdown-toggle" href="tambah-departement">Departement</a>
+                <a class="dropdown-toggle" href="tambah-departemen">Departement</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
