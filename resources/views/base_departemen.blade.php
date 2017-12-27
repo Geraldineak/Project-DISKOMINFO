@@ -66,5 +66,6 @@
     </div>
 </div>
 <!--Akhir menu-->
+@yield('content')
 </body>
 </html>
