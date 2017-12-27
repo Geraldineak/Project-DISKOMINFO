@@ -51,8 +51,8 @@
                 <a class="dropdown-toggle" href="kirim-laporan">Kirim Laporan</a>
             </li>
             <br>
-            <div class="form-group one-group text-center">
-                <button type="button" class="btn btn-primary btn-logout" href="halaman-login">Logout</button>
+            <div class="form-group one-group text-center"><a href="halaman-login">
+                <button type="button" class="btn btn-primary btn-logout" >Logout</button></a>
             </div>
         </ul>
     </div>

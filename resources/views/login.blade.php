@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
+@extends('base_login')
+@section('content')
+<section class="main-section">
+<div class="content">
   <div class="container">
   <div class="col-md-12 div-body">
     <div class="col-md-4 col-md-offset-4 login-form">
@@ -43,6 +33,6 @@
     </div>
   </div>
 </div>
-  </body>
-</html>
+</div>
+</section>
 
