@@ -13,13 +13,35 @@
           <h3><b>S P L K</b></h3>
           <h2>Sign In</h2>
         </div>
+        <!--Alert untuk username-->
+        <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Oops!</strong> Your username is incorrect
+            </div>
+        <!--End Alert-->
           <div class="form-inline" style="margin:auto 20px";>
             <i class="fa fa-user"></i>
             <input type="text" name="username" class="form-control" placeholder="Username">
             <div class="bar"></div>      
           </div>
+          <!--Alert untuk email-->
+        <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Oops!</strong> Your email is incorrect
+            </div>
+        <!--End Alert-->
+          <div class="form-inline" style="margin:auto 20px";>
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="username" class="form-control" placeholder="Email">
+            <div class="bar"></div>      
+          </div>
+          <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Oops!</strong> Your password is incorrect
+            </div>
+        <!--End Alert-->
           <div class="form-inline" style="margin:auto 20px">
-            <i class="fa fa-key"></i>
+            <i class="fa fa-lock"></i>
             <input type="password" name="password" class="form-control" placeholder="Password">
             <div class="bar"></div>
           </div>

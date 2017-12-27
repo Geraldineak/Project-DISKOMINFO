@@ -29,6 +29,7 @@ Route::get('index-outsource', function (){
 Route::get('halaman-login', function (){
     return view('login');
 });
+Route::post('login', 'LoginController@login');
 Route::get('tambah-departemen', function (){
     return view('tambah_departemen');
 });
@@ -41,4 +42,5 @@ Route::get('kirim-laporan', function (){
 Route::get('laporan-kerja', function (){
     return view('laporan_kerja');
 });
+
 
