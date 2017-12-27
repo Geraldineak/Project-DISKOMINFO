@@ -38,4 +38,7 @@ Route::get('lihat-laporan', function (){
 Route::get('kirim-laporan', function (){
     return view('kirim_laporan_outsource');
 });
+Route::get('lihat-laporan', function (){
+    return view('lihat_laporan');
+});
 
