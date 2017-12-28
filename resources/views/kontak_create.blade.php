@@ -18,26 +18,26 @@
                 <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
             </div>
             <div class="form-group">
-                <label for="">Alamat</label>
-                <input type="text" name="alamat" id="alamat" class="form-control" require>
-            </div>
-            <div class="form-group">
                 <label for="">No. Telpon</label>
                 <input type="text" name="no_telp" id="no_telp" class="form-control" require>
             </div>
             <div class="form-group">
+                <label for="">Alamat</label>
+                <input type="text" name="alamat" id="alamat" class="form-control" require>
+            </div>
+            <div class="form-group">
                 <label for="">Jabatan</label>
                 <select name="jabatan" id="jabatan" class="form-control">
-                    <option value="os">Outsourcing</option>
-                    <option value="ks">Kasi</option>
-                    <option value="kb">Kabid</option>
+                    <option value="Outsourcing">Outsourcing</option>
+                    <option value="KASI">Kasi</option>
+                    <option value="KABID">Kabid</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="">Departement</label>
                 <select name="departemen" id="departemen" class="form-control">
-                    <option value="departement_keuangan">Departement Keuangan</option>
-                    <option value="departement_keuangan">Departement Sekretariat</option>
+                    <option value="Keuangan">Departement Keuangan</option>
+                    <option value="Sekretariat">Departement Sekretariat</option>
                 </select>
              </div>
             <div class="form-group">
@@ -49,11 +49,12 @@
                 <input type="password" name="password" id="password" class="form-control" placeholder="Password" require>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit" name="submit" class="form-control" require>
-            </div>
+                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+        </div>
         </form>
     </div>
-    <section class="col-md-12 kolom-pencarian">
+    <!-- <section class="col-md-12 kolom-pencarian">
     <div class="col-md-12 header-form">
         <h2>Daftar Karyawan</h2>
     </div>
@@ -88,8 +89,8 @@
                 <label for=""></label>
             </div>
         </form>
-    </section>
-    <section class="col-md-12 table" style="overflow-x: auto;">
+    </section> -->
+    <!-- <section class="col-md-12 table" style="overflow-x: auto;">
     <table class="table table-inverse ">
     <thead>
         <tr>
@@ -156,7 +157,7 @@
                 </ul>
             </div>
     </div>
-</section>
+</section> -->
 </div>
 </div>
 </section>

@@ -1,8 +1,8 @@
 @extends('base')
 @section('content')
-<section class="main-section>"
-<div class="content">
-<div class="container container-body-index">
+<section class="main-section">
+    <div class="content">
+    <div class="container container-body-index">
     <div class="row">
     <div class="col-md-12 font-head">
         <h3>SPLK</h3>
@@ -11,49 +11,53 @@
         <div class="col-md-12 header-form">
             <h2>Pendaftaran Karyawan</h2>
         </div>
-        <form action="{{ route('kontak.store') }}" method="post">
+        @foreach($data as $datas)
+        <form action="{{ route('kontak.update', $datas->id) }}" method="post">
             {{ csrf_field() }}
+            {{ method_field('PUT') }}
             <div class="form-group">
                 <label for="">Nama Lengkap</label>
-                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
-            </div>
-            <div class="form-group">
-                <label for="">Alamat</label>
-                <input type="text" name="alamat" id="alamat" class="form-control" require>
+                <input type="text" name="nama_lengkap" id="nama_lengkap" value="{{ $datas->nama_lengkap }}" class="form-control" require>
             </div>
             <div class="form-group">
                 <label for="">No. Telpon</label>
-                <input type="text" name="no_telp" id="no_telp" class="form-control" require>
+                <input type="text" name="no_telp" id="no_telp" value="{{ $datas->no_telp }}" class="form-control" require>
+            </div>
+            <div class="form-group">
+                <label for="">Alamat</label>
+                <input type="text" name="alamat" id="alamat" value="{{ $datas->alamat }}" class="form-control" require>
             </div>
             <div class="form-group">
                 <label for="">Jabatan</label>
-                <select name="jabatan" id="jabatan" class="form-control">
-                    <option value="os">Outsourcing</option>
-                    <option value="ks">Kasi</option>
-                    <option value="kb">Kabid</option>
+                <select name="jabatan" id="jabatan" value="{{ $datas->jabatan }}"class="form-control">
+                    <option value="Outsourcing">Outsourcing</option>
+                    <option value="KASI">Kasi</option>
+                    <option value="KABID">Kabid</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="">Departement</label>
-                <select name="departemen" id="departemen" class="form-control">
-                    <option value="departement_keuangan">Departement Keuangan</option>
-                    <option value="departement_keuangan">Departement Sekretariat</option>
+                <select name="departemen" id="departemen" value="{{ $datas->departemen }}" class="form-control">
+                    <option value="Keuangan">Departement Keuangan</option>
+                    <option value="Sekretariat">Departement Sekretariat</option>
                 </select>
              </div>
             <div class="form-group">
                 <label for="">Username</label>
-                <input type="text" name="username" id="username" class="form-control" require>
+                <input type="text" name="username" id="username" value="{{ $datas->username }}" class="form-control" require>
             </div>
             <div class="form-group">
                 <label for="">Password</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="Password" require>
+                <input type="password" name="password" id="password" value="{{ $datas->password }}" class="form-control" placeholder="Password" require>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit" name="submit" class="form-control" require>
-            </div>
+                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+        </div>
         </form>
+        @endforeach
     </div>
-    <section class="col-md-12 kolom-pencarian">
+    <!-- <section class="col-md-12 kolom-pencarian">
     <div class="col-md-12 header-form">
         <h2>Daftar Karyawan</h2>
     </div>
@@ -88,8 +92,8 @@
                 <label for=""></label>
             </div>
         </form>
-    </section>
-    <section class="col-md-12 table" style="overflow-x: auto;">
+    </section> -->
+    <!-- <section class="col-md-12 table" style="overflow-x: auto;">
     <table class="table table-inverse ">
     <thead>
         <tr>
@@ -156,8 +160,10 @@
                 </ul>
             </div>
     </div>
-</section>
+</section> -->
 </div>
 </div>
 </section>
 @endsection
+    </div>
+</section>

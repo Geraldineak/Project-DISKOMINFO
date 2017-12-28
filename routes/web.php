@@ -11,6 +11,10 @@
 |
 */
 
+Route::resource('kontak','Kontak');
+
+Route::put('kontak.update');
+
 Route::get('/', function () {
     return view('index');
 });

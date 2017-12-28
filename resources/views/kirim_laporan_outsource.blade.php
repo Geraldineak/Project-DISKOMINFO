@@ -14,11 +14,11 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="">Judul Laporan Kerja</label>
-                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
+                <input type="text" name="judul" id="judul" class="form-control" require>
             </div>
             <div class="form-group">
                 <label for="">Isi Laporan Kerja</label>
-                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                <textarea name="isi" id="isi" cols="30" rows="10" class="form-control"></textarea>
             </div>
             <div class="form-group">
                 <input type="submit" value="Submit" name="submit" class="form-control" require>
