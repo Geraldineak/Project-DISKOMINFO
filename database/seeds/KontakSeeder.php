@@ -20,6 +20,7 @@ class KontakSeeder extends Seeder
         for ($i = 0; $i < $limit; $i++) {
             DB::table('kontak')->insert([//mengisi data di database
                 'nama_lengkap' => $faker->name,
+                'password' => bcrypt('secret'),
                 'alamat' => $faker->address,
                 'no_telp' => $faker->phoneNumber,
                 'jabatan' => 'Outsource',
