@@ -12,5 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(KontakSeeder::class); //memanggil class KontakSeeder
+        $this->call(DepartemenSeeder::class); 
     }
 }

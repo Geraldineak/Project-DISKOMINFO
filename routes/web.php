@@ -12,14 +12,13 @@
 */
 
 Route::resource('kontak','Kontak');
+Route::resource('departemen','Departemen');
 
-
-
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 });
-Route::get('/input-karyawan', function () {
-    return view('karyawan');
+Route::get('/kontak_create', function () {
+    return view('kontak_create');
 });
 Route::get('/laporan-kerja-kabid', function (){
     return view('laporan_kerja_kabid');

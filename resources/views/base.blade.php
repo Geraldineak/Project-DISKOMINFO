@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SPLK | DISKOMINFO</title>
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
@@ -46,7 +46,7 @@
             </li>
             <li class="list-group-item">
                 <i class="fa fa-user"></i>
-                <a class="dropdown-toggle" href="input-karyawan">Karyawan</a>
+                <a class="dropdown-toggle" href="kontak_create">Karyawan</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-building"></i>

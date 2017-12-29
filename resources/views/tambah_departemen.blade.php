@@ -14,7 +14,7 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="">Nama Departement</label>
-                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
+                <input type="text" name="nama_departemen" id="nama_departemen" class="form-control" require>
             </div>
             <div class="form-group">
                 <input type="submit" value="Submit" name="submit" class="form-control" require>
