@@ -24,6 +24,7 @@
                     <button type="reset" class="btn btn-md btn-danger">Cancel</button>
             </div>
         </form>
+        @endforeach
     </div>
     <!-- <section class="col-md-12 table" style="overflow-x: auto;">
     <table class="table table-inverse ">
