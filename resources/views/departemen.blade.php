@@ -12,12 +12,12 @@
                     <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
                 </div>
 @endif
-        <thread>
+        <thead>
         <tr>
             <th>No.</th>
             <th>Nama Departemen</th>
         </tr>
-        </thread>
+        </thead>
         <tbody>
         @php $no = 1; @endphp
         @foreach($data as $datas)
