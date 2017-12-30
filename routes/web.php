@@ -13,8 +13,9 @@
 
 Route::resource('kontak','Kontak');
 Route::resource('departemen','Departemen');
+Route::resource('laporan','Laporan');
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
 });
 Route::get('/kontak_create', function () {

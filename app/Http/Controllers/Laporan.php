@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ModelDepartemen;
+use App\ModelLaporan;
 use View;
 
-class Departemen extends Controller
+class Laporan extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,8 @@ class Departemen extends Controller
      */
     public function index()
     {
-        //
-        $data = ModelDepartemen::all();
-        return view('departemen',compact('data'));
+        $data = ModelLaporan::all();
+        return view('laporan',compact('data'));
     }
 
     /**
@@ -27,7 +26,7 @@ class Departemen extends Controller
      */
     public function create()
     {
-        return view('departemen_create');
+        return view('laporan_create');
     }
 
     /**
@@ -38,10 +37,11 @@ class Departemen extends Controller
      */
     public function store(Request $request)
     {
-        $data = new ModelDepartemen();
-        $data->nama_departemen = $request->nama_departemen;
+        $data = new ModelLaporan();
+        $data->judul = $request->judul;
+        $data->isi = $request->isi;
         $data->save();
-        return redirect()->route('departemen.index')->with('alert-success','Berhasil Menambahkan Data!');
+        return redirect()->route('laporan.index')->with('alert-success','Berhasil Memasukkan Data!');
     }
 
     /**
@@ -63,9 +63,9 @@ class Departemen extends Controller
      */
     public function edit($id)
     {
-        $data = ModelDepartemen::where('id',$id)->get();
+        $data = ModelLaporan::where('id',$id)->get();
 
-        return view('departemen_edit',compact('data'));
+        return view('laporan_edit',compact('data'));
     }
 
     /**
@@ -77,10 +77,11 @@ class Departemen extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = ModelDepartemen::where('id',$id)->first();
-        $data->nama_departemen = $request->nama_departemen;
+        $data = ModelLaporan::where('id',$id)->first();
+        $data->judul = $request->judul;
+        $data->isi = $request->isi;
         $data->save();
-        return redirect()->route('departemen.index')->with('alert-success','Data Berhasil diubah!');
+        return redirect()->route('laporan.index')->with('alert-success','Data berhasil diubah!');
     }
 
     /**
@@ -91,8 +92,8 @@ class Departemen extends Controller
      */
     public function destroy($id)
     {
-        $data = ModelDepartemen::where('id',$id)->first();
+        $data = ModelLaporan::where('id',$id)->first();
         $data->delete();
-        return redirect()->route('departemen.index')->with('alert-success','Data berhasil dihapus!');
+        return redirect()->route('laporan.index')->with('alert-success','Data berhasil dihapus');
     }
 }
