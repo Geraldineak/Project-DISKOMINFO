@@ -60,6 +60,14 @@ class Kontak extends Controller
         //
     }
 
+    // /**Fungsi dropdown departemen */
+    // public function details($id){
+    //     $departemens = \App\ModelDepartemen::pluck('nama_departemen','id');
+    //     $departemens = DB::table('kontak_create')->orderBy('nama_departemen','asc')->pluck('nama_departemen','id');
+
+    //     return view('kontak_create')->with('departemens',$departemens);
+    // }
+
     /**
      * Show the form for editing the specified resource.
      *

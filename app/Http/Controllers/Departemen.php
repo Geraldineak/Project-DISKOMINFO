@@ -30,6 +30,14 @@ class Departemen extends Controller
         return view('departemen_create');
     }
 
+    // /**Fungsi dropdown departemen */
+    // public function details($id){
+    //     $departemens = ModelDepartemen::pluck('nama_departemen','id');
+    //     $departemens = DB::table('kontak_create')->orderBy('nama_departemen','asc')->pluck('nama_departemen','id');
+
+    //     return view('kontak_create')->with('departemens',$departemens);
+    // }
+
     /**
      * Store a newly created resource in storage.
      *

@@ -48,3 +48,8 @@ Route::get('laporan-kerja', function (){
 
 Route::get('add-to-log', 'HomeController@myTestAddToLog');
 Route::get('logActivity', 'HomeController@logActivity');
+
+// Route::get('/test', function (){
+//     $departemens = DB::table('departemen')->pluck('nama_departemen','id');
+//     return view('kontak_create')-> with(['departemens' => $departemens]);
+// });
