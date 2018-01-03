@@ -44,6 +44,7 @@ class Kontak extends Controller
         $data->jabatan = $request->jabatan;
         $data->departemen = $request->departemen;
         $data->username = $request->username;
+        $data->password = $request->password;
         $data->save();
         return redirect()->route('kontak.index')->with('alert-success','Berhasil Menambahkan Data!');
     }

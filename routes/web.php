@@ -46,4 +46,3 @@ Route::get('laporan-kerja', function (){
     return view('laporan_kerja');
 });
 
-
