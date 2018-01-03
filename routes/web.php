@@ -18,7 +18,8 @@ Route::resource('laporan','Laporan');
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/kontak_create', function () {
+
+Route::get('/kontak_create', function (){
     return view('kontak_create');
 });
 Route::get('/laporan-kerja-kabid', function (){
@@ -34,9 +35,7 @@ Route::get('halaman-login', function (){
     return view('login');
 });
 Route::post('login', 'LoginController@login');
-Route::get('tambah-departemen', function (){
-    return view('tambah_departemen');
-});
+
 Route::get('lihat-laporan', function (){
     return view('lihat_laporan');
 });

@@ -48,7 +48,7 @@
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
-                <a class="dropdown-toggle" href="kirim-laporan">Kirim Laporan</a>
+                <a class="dropdown-toggle" href="laporan">Kirim Laporan</a>
             </li>
             <br>
             <div class="form-group one-group text-center"><a href="halaman-login">

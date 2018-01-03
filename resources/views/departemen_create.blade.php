@@ -23,7 +23,8 @@
             </div>
         </form>
     </div>
-    <!-- <section class="col-md-12 table" style="overflow-x: auto;">
+    <!--Tabel Departemen-->
+    <section class="col-md-12 table" style="overflow-x: auto;">
     <table class="table table-inverse ">
     <thead>
         <tr>
@@ -81,7 +82,7 @@
                 </ul>
             </div>
     </div>
-</section> -->
+</section> 
 </div>
 </div>
 </section>

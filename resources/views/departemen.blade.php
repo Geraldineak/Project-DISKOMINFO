@@ -2,10 +2,11 @@
 @section('content')
 <section class="main-section">
     <div class="content">
-    <section class="col-md-12 kolom-pencarian">
-    <div class="col-md-12 header-form">
-        <h2>Daftar Karyawan</h2>
+    <section class="col-md-12 kolom-pencarian" style="margin-top:7%;">
+    <div class="col-md-12 header-form" style="width:auto; margin-left:20%">
+        <h2>Daftar Departemen</h2>
     </div>
+    <a href="{{ URL('departemen/create') }}" class="btn btn-raised btn-primary pull-right">Tambah</a>
     <table class="table table-bordered" style="width:auto; margin-left:20%">
     @if(Session::has('alert-success'))
                 <div class="alert alert-success" style="width:auto; margin-left:20%">

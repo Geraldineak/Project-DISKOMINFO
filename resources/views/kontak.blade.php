@@ -2,10 +2,16 @@
 @section('content')
 <section class="main-section">
     <div class="content">
+    <br>
+    <br>
+    <br>
     <section class="col-md-12 kolom-pencarian">
-    <div class="col-md-12 header-form">
+    <div class="col-md-12 header-form" style="width:auto; margin-left:20%">
         <h2>Daftar Karyawan</h2>
     </div>
+    <br>
+    <a href="{{ URL('kontak/create') }}" class="btn btn-raised btn-primary pull-right">Tambah</a>
+    <br>
         <form action="" method="post" class="form" style="width:auto; margin-left:20%">
             <div class="form-group">
                 <label for="">Pencarian</label>

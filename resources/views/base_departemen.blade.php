@@ -44,15 +44,15 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <i class="fa fa-home"></i>
-                <a class="dropdown-toggle" href="index">Home</a>
+                <a class="dropdown-toggle" href="/">Home</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-user"></i>
-                <a class="dropdown-toggle" href="input-karyawan">Karyawan</a>
+                <a class="dropdown-toggle" href="kontak">Karyawan</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-building"></i>
-                <a class="dropdown-toggle" href="tambah-departemen">Departement</a>
+                <a class="dropdown-toggle" href="departemen">Departement</a>
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-text"></i>
