@@ -46,3 +46,5 @@ Route::get('laporan-kerja', function (){
     return view('laporan_kerja');
 });
 
+Route::get('add-to-log', 'HomeController@myTestAddToLog');
+Route::get('logActivity', 'HomeController@logActivity');
