@@ -1,5 +1,10 @@
 @extends('base')
 @section('content')
+<script>
+@if(\Session::has('infojabatan'))
+        console.log("{{Session::get('infojabatan')}}");
+@endif
+</script>
 <section class="main-section">
 <div class="content">
 <div class="container container-body-index">
@@ -18,9 +23,7 @@
                     <p>Karyawan</p>
                     <h1>190</h1>
                 </div>
-                <div class="col-md-8 fa">
-                    <i class="fa fa-user"></i>
-                </div>
+                
             </div>
         </div>
         <div class="col-md-4 content-widget">

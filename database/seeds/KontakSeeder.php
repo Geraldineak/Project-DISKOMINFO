@@ -15,7 +15,7 @@ class KontakSeeder extends Seeder
         //
         $faker = Faker\Factory::create(); //import library faker
         $data = new ModelKontak();
-        $limit = 5; //batasan berapa banyak data
+        $limit = 1; //batasan berapa banyak data
 
         for ($i = 0; $i < $limit; $i++) {
             DB::table('kontak')->insert([//mengisi data di database
@@ -23,9 +23,9 @@ class KontakSeeder extends Seeder
                 'password' => bcrypt('secret'),
                 'alamat' => $faker->address,
                 'no_telp' => $faker->phoneNumber,
-                'jabatan' => 'Outsource',
-                'departemen' => 'Keuangan',
-                'username' => '12345',
+                'jabatan' => 'Admin',
+                'departemen' => 'IT',
+                'username' => 'gege',
                 ]);
         }
     }

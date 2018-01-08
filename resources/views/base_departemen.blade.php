@@ -59,7 +59,7 @@
                 <a class="dropdown-toggle" href="laporan-kerja">Laporan Kerja</a>
             </li>
             <br>
-            <div class="form-group one-group text-center"><a href="halaman-login">
+            <div class="form-group one-group text-center"><a href="/logout">
                 <button type="button" class="btn btn-primary btn-logout" >Logout</button></a>
             </div>
         </ul>

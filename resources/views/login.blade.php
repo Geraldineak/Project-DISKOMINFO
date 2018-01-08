@@ -5,7 +5,8 @@
   <div class="container">
   <div class="col-md-12 div-body">
     <div class="col-md-4 col-md-offset-4 login-form">
-      <form>
+      <form action="{{ url('/loginPost') }}" method="post">
+      {{ csrf_field() }}
         <div class="form-group text-center">
           <img src="assets/img/yang.png" alt="" width="100">
         </div>
@@ -14,44 +15,24 @@
           <h2>Sign In</h2>
         </div>
         <!--Alert untuk username-->
-        <div class="alert alert-danger">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Oops!</strong> Your username is incorrect
-            </div>
-        <!--End Alert-->
-          <div class="form-inline" style="margin:auto 20px";>
-            <i class="fa fa-user"></i>
-            <input type="text" name="username" class="form-control" placeholder="Username">
-            <div class="bar"></div>      
-          </div>
-          <!--Alert untuk email-->
-        <div class="alert alert-danger">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Oops!</strong> Your email is incorrect
-            </div>
-        <!--End Alert-->
-          <div class="form-inline" style="margin:auto 20px";>
-            <i class="fa fa-envelope"></i>
-            <input type="email" name="username" class="form-control" placeholder="Email">
-            <div class="bar"></div>      
-          </div>
-          <div class="alert alert-danger">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Oops!</strong> Your password is incorrect
-            </div>
-        <!--End Alert-->
-          <div class="form-inline" style="margin:auto 20px">
-            <i class="fa fa-lock"></i>
-            <input type="password" name="password" class="form-control" placeholder="Password">
-            <div class="bar"></div>
-          </div>
-          <div class="col-md-12">
-          <div class="form-group one-group">
-            <button type="submit" name="button" class="form-control login">Login</button>
-          </div>
-          </div>
-          
-      </form>
+        @if(\Session::has('alert'))
+                <div class="alert alert-danger">
+                    <div>{{Session::get('alert')}}</div>
+                </div>
+            @endif
+            
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="username" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Password</label>
+                    <input type="password" class="form-control" id="password" name="password"></input>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                </div>
+</form>
     </div>
   </div>
 </div>

@@ -53,3 +53,8 @@ Route::get('logActivity', 'HomeController@logActivity');
 //     $departemens = DB::table('departemen')->pluck('nama_departemen','id');
 //     return view('kontak_create')-> with(['departemens' => $departemens]);
 // });
+
+Route::get('/index', 'User@index');
+Route::get('/login', 'User@login');
+Route::post('/loginPost', 'User@loginPost');
+Route::get('/logout', 'User@logout');
