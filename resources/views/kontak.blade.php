@@ -54,6 +54,7 @@
     <thead>
         <tr>
             <th>No.</th>
+            <th>NIK</th><!--ini kolom barunya-->
             <th>Nama</th>
             <th>No.Telp</th>
             <th>Alamat</th>
@@ -66,6 +67,7 @@
     @foreach($data as $datas)
         <tr>
             <td>{{ $no++ }}</td>
+            <td>{{ $datas->nik }}</td><!--ini kolom barunya-->
             <td>{{ $datas->nama_lengkap }}</td>
             <td>{{ $datas->no_telp }}</td>
             <td>{{ $datas->alamat }}</td>

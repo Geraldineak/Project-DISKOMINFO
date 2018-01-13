@@ -14,6 +14,10 @@
         <form action="{{ route('kontak.store') }}" method="post">
             {{ csrf_field() }}
             <div class="form-group">
+                <label for="">NIK</label>
+                <input type="text" name="nik" id="nik" class="form-control" require>
+            </div>
+            <div class="form-group">
                 <label for="">Nama Lengkap</label>
                 <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" require>
             </div>

@@ -38,6 +38,7 @@ class Kontak extends Controller
     public function store(Request $request)
     {
         $data = new ModelKontak();
+        $data->nik = $request->nik;
         $data->nama_lengkap = $request->nama_lengkap;
         $data->alamat = $request->alamat;
         $data->no_telp = $request->no_telp;
@@ -93,6 +94,7 @@ class Kontak extends Controller
     public function update(Request $request, $id)
     {
         $data = \App\ModelKontak::where('id',$id)->first();
+        $data->nik = $request->nik;
         $data->nama_lengkap = $request->nama_lengkap;
         $data->no_telp = $request->no_telp;
         $data->alamat = $request->alamat;
