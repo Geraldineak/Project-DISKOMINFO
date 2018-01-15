@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModelDepartemensTable extends Migration
+class CreateModelLaporanKasisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateModelDepartemensTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('departemen');
-        Schema::create('departemen', function (Blueprint $table) {
+        Schema::dropIfExists('kasi');
+        Schema::create('kasi', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_departemen');
             $table->timestamps();
+            $table->string('judul_laporan');
+            $table->string('pengirim');
+            $table->string('no_karyawan');
+            $table->string('status');
+            $table->string('opsi');
         });
     }
 
@@ -28,6 +32,6 @@ class CreateModelDepartemensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('departemen');
+        Schema::dropIfExists('kasi');
     }
 }

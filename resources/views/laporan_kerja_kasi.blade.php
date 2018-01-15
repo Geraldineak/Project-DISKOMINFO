@@ -13,7 +13,49 @@
             <h2>Daftar Laporan Kerja Kasi</h2>
         </div>
             <table class="table table-inverse">
-            <thead>
+            <section class="col-md-12 table" style="overflow-x: auto;">
+    @if(Session::has('alert-success'))
+                <div class="alert alert-success" style="width:auto; margin-left:20%">
+                    <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
+                </div>
+@endif
+    <table class="table table-inverse" style="width:auto; margin-left:20%">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Waktu</th><!--ini kolom barunya-->
+            <th>Judul Laporan</th>
+            <th>Pengirim</th>
+            <th>NIK</th>
+            <th>Status</th>
+            <th>Opsi</th>
+        </tr>
+    </thead>
+    <tbody>
+    @php $no = 1; @endphp
+    @foreach($data as $datas)
+        <tr>
+            <td>{{ $no++ }}</td>
+            <td>{{ $datas->created_at }}</td><!--ini kolom barunya-->
+            <td>{{ $datas->nama_lengkap }}</td>
+            <td>{{ $datas->no_telp }}</td>
+            <td>{{ $datas->alamat }}</td>
+            <td>{{ $datas->jabatan }}</td>
+            <td>{{ $datas->departemen }}</td>
+            <td>
+                <form action="{{ route('kontak.destroy',$datas->id) }}" method="post">
+                    {{ csrf_field() }}
+                    {{ method_field('DELETE') }}
+                    <a href="{{ route('kontak.edit',$datas->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                    <button class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
+                </form>
+            </td>
+        </tr>
+    @endforeach
+    </tbody>
+</table>
+</section>
+            <!-- <thead>
                 <tr>
                     <th>Id</th>
                     <th>Tanggal</th>
@@ -104,7 +146,7 @@
                 </tr>
             </tbody>
         </table>
-        </section>
+        </section> -->
             <div class="col-md-12 table-footer">
             <div class="row">
                   <div class="col col-xs-4">

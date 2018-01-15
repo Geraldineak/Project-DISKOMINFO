@@ -13,6 +13,7 @@ class CreateModelKontaksTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('kontak');
         Schema::create('kontak', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nik');//kolom barunya
@@ -35,6 +36,6 @@ class CreateModelKontaksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('model_kontaks');
+        Schema::dropIfExists('kontak');
     }
 }

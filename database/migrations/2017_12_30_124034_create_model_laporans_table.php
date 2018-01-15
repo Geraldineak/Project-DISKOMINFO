@@ -13,6 +13,7 @@ class CreateModelLaporansTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('laporan');
         Schema::create('laporan', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul');
@@ -28,6 +29,6 @@ class CreateModelLaporansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('model_laporans');
+        Schema::dropIfExists('laporan');
     }
 }
