@@ -42,6 +42,10 @@
                     <option value="Sekretariat">Departement Sekretariat</option>
                 </select>
              </div>
+             <div class="form-group">
+                <label for="">NIK Atasan</label>
+                <input type="text" name="nik_atasan" id="nik_atasan" value="{{ $datas->nik_atasan }}" class="form-control">
+             </div>
             <div class="form-group">
                 <label for="">Username</label>
                 <input type="text" name="username" id="username" value="{{ $datas->username }}" class="form-control" require>

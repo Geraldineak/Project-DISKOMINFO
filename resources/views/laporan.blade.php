@@ -1,4 +1,4 @@
-@extends('base')
+@extends('base_outsource')
 @section('content')
 <section class="main-section">
 <div class="content">
@@ -17,6 +17,7 @@
                     <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
                 </div>
 @endif
+  @php echo date('j F Y', '2018-01-15 11:02:54'); @endphp  
     <table class="table table-inverse ">
     <thead>
         <tr>

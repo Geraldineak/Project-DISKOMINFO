@@ -44,6 +44,7 @@ class Kontak extends Controller
         $data->no_telp = $request->no_telp;
         $data->jabatan = $request->jabatan;
         $data->departemen = $request->departemen;
+        $data->nik_atasan = $request->nik_atasan;
         $data->username = $request->username;
         $pass = $request->password;
         $encpass = bcrypt($pass);
@@ -100,6 +101,7 @@ class Kontak extends Controller
         $data->alamat = $request->alamat;
         $data->jabatan = $request->jabatan;
         $data->departemen = $request->departemen;
+        $data->nik_atasan = $request->nik_atasan;
         $data->save();
         return redirect()->route('kontak.index')->with('alert-success','Data berhasil diubah!');
     }

@@ -22,6 +22,7 @@ class CreateModelKontaksTable extends Migration
             $table->string('no_telp');
             $table->string('jabatan'); //INI COMBOBOX
             $table->string('departemen'); //INI COMBOBOX
+            $table->string('nik_atasan'); //INI COMBOBOX
             $table->string('username');
             $table->string('password')->bcrypt('secret');
             $table->timestamps();

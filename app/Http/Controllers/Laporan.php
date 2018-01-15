@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\ModelLaporan;
 use View;
 
@@ -17,6 +18,18 @@ class Laporan extends Controller
     {
         $data = ModelLaporan::all();
         return view('laporan',compact('data'));
+    }
+
+    public function index_outsource()
+    {
+        $data = ModelLaporan::where('nik', Session::get('nik'));
+        return view('laporan_outsource',compact('data'));
+    }
+
+    public function index_ka() //index untuk kabid dan kasi
+    {
+        $data = ModelLaporan::where('nik_atasan', Session::get('nik'));
+        return view('laporan_kerja',compact('data'));
     }
 
     /**
@@ -37,9 +50,13 @@ class Laporan extends Controller
      */
     public function store(Request $request)
     {
+        $nik = Session::get('nik');
+        $nik_atasan = Session::get('nik_atasan');
         $data = new ModelLaporan();
+        $data->nik = Session::get('nik');
         $data->judul = $request->judul;
         $data->isi = $request->isi;
+        $data->nik_atasan = Session::get('nik_atasan');
         $data->save();
         return redirect()->route('laporan.index')->with('alert-success','Berhasil Memasukkan Data!');
     }

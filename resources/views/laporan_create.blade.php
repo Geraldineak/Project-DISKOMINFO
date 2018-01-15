@@ -18,6 +18,10 @@
                 <input type="text" name="judul" id="judul" class="form-control" require>
             </div>
             <div class="form-group">
+                <label for="">NIK Atasan</label>
+                <input disabled type="text" value="{{ Session::get('nik_atasan')}}" name="nik_atasan" id="nik_atasan" class="form-control" require>
+            </div>
+            <div class="form-group">
                 <label for="">Isi Laporan Kerja</label>
                 <textarea name="isi" id="isi" cols="30" rows="10" class="form-control"></textarea>
             </div>

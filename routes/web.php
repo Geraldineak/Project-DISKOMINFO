@@ -21,9 +21,9 @@ Route::get('/', function () {
 
 
 
-Route::get('/kontak_create', function (){
-    return view('kontak_create');
-});
+// Route::get('/kontak_create', function (){
+//     return view('kontak_create');
+// });
 Route::get('/laporan-kerja-kabid', function (){
     return view('laporan_kerja_kabid');
 });
@@ -33,20 +33,20 @@ Route::get('/laporan-kerja-kasi', function (){
 Route::get('index-outsource', function (){
     return view('index_outsource');
 });
-Route::get('halaman-login', function (){
-    return view('login');
-});
+// Route::get('halaman-login', function (){
+//     return view('login');
+// });
 Route::post('login', 'LoginController@login');
 
-Route::get('lihat-laporan', function (){
-    return view('lihat_laporan');
-});
-Route::get('kirim-laporan', function (){
-    return view('kirim_laporan_outsource');
-});
-Route::get('laporan-kerja', function (){
-    return view('laporan_kerja');
-});
+// Route::get('lihat-laporan', function (){
+//     return view('lihat_laporan');
+// });
+// Route::get('kirim-laporan', function (){
+//     return view('kirim_laporan_outsource');
+// });
+// Route::get('laporan-kerja', function (){
+//     return view('laporan_kerja');
+// });
 
 Route::get('add-to-log', 'HomeController@myTestAddToLog');
 Route::get('logActivity', 'HomeController@logActivity');

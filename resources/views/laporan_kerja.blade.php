@@ -10,7 +10,7 @@
     <div class="col-sm-12 col-lg-12 table-wrapper">
     <section class="table-grabbing col-md-12" style="overflow-x: auto;">
         <div class="col-md-12 header-form">
-            <h2>Daftar Laporan Kerja Kabid</h2>
+            <h2>Daftar Laporan Kerja {{Session::get('jabatan')}}</h2>
         </div>
             <table class="table table-inverse">
             <thead>
@@ -27,9 +27,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>16 November 2017</td>
-                    <td>17.30 PM</td>
+                    <td>{{  $no++ }}</td>
+                    <td>{{ $datas->created_at}}</td>
+                    <td>{{}}</td>
                     <td>Mubes</td>
                     <td>Miche</td>
                     <td>46150100014</td>
@@ -40,7 +40,7 @@
                         <button type="submit" class="btn-lihat">Lihat</button>
                     </td>
                 </tr>
-                <tr>
+               <!-- <tr>
                     <td>2</td>
                     <td>16 November 2017</td>
                     <td>17.30 PM</td>
@@ -53,55 +53,7 @@
                     <td>
                         <button type="submit" class="btn-lihat">Lihat</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>16 November 2017</td>
-                    <td>17.30 PM</td>
-                    <td>Mubes</td>
-                    <td>Miche</td>
-                    <td>46150100014</td>
-                    <td>
-                        <label for="">Pending</label>
-                    </td>
-                    <td>
-                        <button type="submit" class="btn-terima">Menyetujui</button>
-                        <button type="submit" class="btn-lihat">Lihat</button>
-                        <button type="submit" class="btn-hapus">Menolak</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>16 November 2017</td>
-                    <td>17.30 PM</td>
-                    <td>Mubes</td>
-                    <td>Miche</td>
-                    <td>46150100014</td>
-                    <td>
-                        <label for="">Pending</label>
-                    </td>
-                    <td>
-                        <button type="submit" class="btn-terima">Menyetujui</button>
-                        <button type="submit" class="btn-lihat">Lihat</button>
-                        <button type="submit" class="btn-hapus">Menolak</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>16 November 2017</td>
-                    <td>17.30 PM</td>
-                    <td>Mubes</td>
-                    <td>Miche</td>
-                    <td>46150100014</td>
-                    <td>
-                        <label for="">Pending</label>
-                    </td>
-                    <td>
-                        <button type="submit" class="btn-terima">Menyetujui</button>
-                        <button type="submit" class="btn-lihat">Lihat</button>
-                        <button type="submit" class="btn-hapus">Menolak</button>
-                    </td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
         </section>

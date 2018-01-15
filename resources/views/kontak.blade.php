@@ -60,6 +60,7 @@
             <th>Alamat</th>
             <th>Jabatan</th>
             <th>Department</th>
+            <th>NIK_Atasan</th>
         </tr>
     </thead>
     <tbody>
@@ -73,6 +74,7 @@
             <td>{{ $datas->alamat }}</td>
             <td>{{ $datas->jabatan }}</td>
             <td>{{ $datas->departemen }}</td>
+            <td>{{ $datas->nik_atasan }}</td>
             <td>
                 <form action="{{ route('kontak.destroy',$datas->id) }}" method="post">
                     {{ csrf_field() }}

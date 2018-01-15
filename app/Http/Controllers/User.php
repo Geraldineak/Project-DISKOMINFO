@@ -35,6 +35,8 @@ class User extends Controller
         if(count($data) > 0){//apakah user tsb ada atau tidak
             if(Hash::check($password,$data->password)){
                 Session::put('username',$data->username);
+                Session::put('nik',$data->nik);
+                Session::put('nik_atasan',$data->nik_atasan);
                 // Session::put('email',$data->email);
                 Session::put('login',TRUE);
                 Session::put('jabatan',$data->jabatan);

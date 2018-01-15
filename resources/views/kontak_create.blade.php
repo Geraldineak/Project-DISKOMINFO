@@ -44,6 +44,10 @@
                     <option value="Sekretariat">Departement Sekretariat</option>
                 </select>
              </div>
+             <div class="form-group">
+                <label for="">NIK_Atasan</label>
+                <input type="text" name="nik_atasan" id="nik_atasan" class="form-control" require>
+            </div>
             <div class="form-group">
                 <label for="">Username</label>
                 <input type="text" name="username" id="username" class="form-control" require>
