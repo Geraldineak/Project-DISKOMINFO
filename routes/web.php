@@ -24,12 +24,19 @@ Route::get('/', function () {
 // Route::get('/kontak_create', function (){
 //     return view('kontak_create');
 // });
+
+//laporan
 Route::get('/laporan-kerja-kabid', function (){
     return view('laporan_kerja_kabid');
 });
 Route::get('/laporan-kerja-kasi', function (){
     return view('laporan_kerja_kasi');
 });
+Route::get('/laporan-kerja', 'Laporan@index_ka');
+Route::get('/laporan-outsource', 'Laporan@index_outsource');
+
+
+
 Route::get('index-outsource', function (){
     return view('index_outsource');
 });

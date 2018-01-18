@@ -1,8 +1,8 @@
 @extends('base')
 @section('content')
 <script>
-@if(\Session::has('infojabatan'))
-        console.log("{{Session::get('infojabatan')}}");
+@if(\Session::has('jabatan'))
+        console.log("{{Session::get('jabatan')}}");
 @endif
 </script>
 <section class="main-section">

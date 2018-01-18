@@ -22,13 +22,15 @@ class Laporan extends Controller
 
     public function index_outsource()
     {
-        $data = ModelLaporan::where('nik', Session::get('nik'));
+        $data = ModelLaporan::where('nik', Session::get('nik'))->get();
         return view('laporan_outsource',compact('data'));
     }
 
     public function index_ka() //index untuk kabid dan kasi
     {
-        $data = ModelLaporan::where('nik_atasan', Session::get('nik'));
+        $data = ModelLaporan::where('nik_atasan', Session::get('nik'))->get();
+        //$data = ModelLaporan::where('id', );
+        //$data = ModelLaporan::all();
         return view('laporan_kerja',compact('data'));
     }
 

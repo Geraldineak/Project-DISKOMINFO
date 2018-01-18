@@ -1,4 +1,4 @@
-@extends('base')
+@extends('base_outsource')
 @section('content')
 <section class="main-section">
 <div class="content">
@@ -11,7 +11,7 @@
     <div class="col-md-12 header-form">
             <h2>Laporan Kerja</h2>
     </div>
-    <!--<a href="{{ URL('laporan/create') }}" class="btn btn-raised btn-primary pull-right">Tambah</a>-->
+    <a href="{{ URL('laporan/create') }}" class="btn btn-raised btn-primary pull-right">Tambah</a>
     @if(Session::has('alert-success'))
                 <div class="alert alert-success" style="width:auto; margin-left:20%">
                     <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
