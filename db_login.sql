@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.6deb4
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 15, 2018 at 01:13 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Host: localhost:3306
+-- Generation Time: Jan 18, 2018 at 11:00 PM
+-- Server version: 10.1.26-MariaDB-0+deb9u1
+-- PHP Version: 7.0.19-1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -100,7 +100,10 @@ CREATE TABLE `laporan` (
 --
 
 INSERT INTO `laporan` (`id`, `nik`, `judul`, `isi`, `nik_atasan`, `created_at`, `updated_at`) VALUES
-(2, '4314010019', 'dkfjdkfdkj', 'djkdjfkdfjkdfjkd', '4615010012', '2018-01-15 04:02:54', '2018-01-15 04:02:54');
+(2, '4314010019', 'dkfjdkfdkj', 'djkdjfkdfjkdfjkd', '4615010012', '2018-01-15 04:02:54', '2018-01-15 04:02:54'),
+(3, '4314010019', 'suffer', 'you need a hero really I\'m not lying it\'s real and 100% legit', '4615010012', '2018-01-17 19:55:30', '2018-01-17 19:55:30'),
+(4, '4314010019', 'I got news for you', 'You need a hero\r\nSomeone to rescue you\r\nJust someone that you can run to', '4615010012', '2018-01-17 19:56:53', '2018-01-17 19:56:53'),
+(5, '4314010019', 'Yeah', 'someone you can run into', '4615010012', '2018-01-17 21:29:58', '2018-01-17 21:29:58');
 
 -- --------------------------------------------------------
 
@@ -227,7 +230,7 @@ ALTER TABLE `kontak`
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `log_activities`
 --
