@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 18, 2018 at 11:00 PM
+-- Generation Time: Jan 22, 2018 at 06:42 AM
 -- Server version: 10.1.26-MariaDB-0+deb9u1
 -- PHP Version: 7.0.19-1
 
@@ -91,6 +91,7 @@ CREATE TABLE `laporan` (
   `judul` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `isi` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `nik_atasan` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -99,11 +100,32 @@ CREATE TABLE `laporan` (
 -- Dumping data for table `laporan`
 --
 
-INSERT INTO `laporan` (`id`, `nik`, `judul`, `isi`, `nik_atasan`, `created_at`, `updated_at`) VALUES
-(2, '4314010019', 'dkfjdkfdkj', 'djkdjfkdfjkdfjkd', '4615010012', '2018-01-15 04:02:54', '2018-01-15 04:02:54'),
-(3, '4314010019', 'suffer', 'you need a hero really I\'m not lying it\'s real and 100% legit', '4615010012', '2018-01-17 19:55:30', '2018-01-17 19:55:30'),
-(4, '4314010019', 'I got news for you', 'You need a hero\r\nSomeone to rescue you\r\nJust someone that you can run to', '4615010012', '2018-01-17 19:56:53', '2018-01-17 19:56:53'),
-(5, '4314010019', 'Yeah', 'someone you can run into', '4615010012', '2018-01-17 21:29:58', '2018-01-17 21:29:58');
+INSERT INTO `laporan` (`id`, `nik`, `judul`, `isi`, `nik_atasan`, `status`, `created_at`, `updated_at`) VALUES
+(2, '4314010019', 'dkfjdkfdkj', 'djkdjfkdfjkdfjkd', '4615010012', 1, '2018-01-15 04:02:54', '2018-01-15 04:02:54'),
+(3, '4314010019', 'suffer', 'you need a hero really I\'m not lying it\'s real and 100% legit', '4615010012', 2, '2018-01-17 19:55:30', '2018-01-17 19:55:30'),
+(4, '4314010019', 'I got news for you', 'You need a hero\r\nSomeone to rescue you\r\nJust someone that you can run to', '4615010012', 0, '2018-01-17 19:56:53', '2018-01-17 19:56:53'),
+(5, '4314010019', 'Yeah', 'someone you can run into', '4615010012', 0, '2018-01-17 21:29:58', '2018-01-17 21:29:58'),
+(6, '4314010019', '1', 'yeah', '4615010012', 0, '2018-01-21 03:35:59', '2018-01-21 03:35:59'),
+(7, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:38:34', '2018-01-21 03:38:34'),
+(8, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:40:16', '2018-01-21 03:40:16'),
+(9, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:51:23', '2018-01-21 03:51:23'),
+(10, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:51:46', '2018-01-21 03:51:46'),
+(11, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:52:13', '2018-01-21 03:52:13'),
+(12, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:52:27', '2018-01-21 03:52:27'),
+(13, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:52:41', '2018-01-21 03:52:41'),
+(14, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:52:49', '2018-01-21 03:52:49'),
+(15, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:53:03', '2018-01-21 03:53:03'),
+(16, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:53:18', '2018-01-21 03:53:18'),
+(17, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:55:21', '2018-01-21 03:55:21'),
+(18, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:55:28', '2018-01-21 03:55:28'),
+(19, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 03:55:37', '2018-01-21 03:55:37'),
+(20, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:13:51', '2018-01-21 04:13:51'),
+(21, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:14:07', '2018-01-21 04:14:07'),
+(22, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:14:23', '2018-01-21 04:14:23'),
+(23, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:17:32', '2018-01-21 04:17:32'),
+(24, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:19:00', '2018-01-21 04:19:00'),
+(25, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:19:11', '2018-01-21 04:19:11'),
+(26, '4314010019', '2', 'yeah', '4615010012', 0, '2018-01-21 04:19:23', '2018-01-21 04:19:23');
 
 -- --------------------------------------------------------
 
@@ -230,7 +252,7 @@ ALTER TABLE `kontak`
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `log_activities`
 --
