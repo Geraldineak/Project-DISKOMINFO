@@ -33,7 +33,7 @@ Route::get('/laporan-kerja-kasi', function (){
     return view('laporan_kerja_kasi');
 });
 Route::get('/laporan-kerja', 'Laporan@index_ka');
-Route::get('/laporan-outsource', 'Laporan@index_outsource');
+Route::get('/laporan-outsource', 'Laporan@index_outsource')->name("laporan.outsource");
 
 
 

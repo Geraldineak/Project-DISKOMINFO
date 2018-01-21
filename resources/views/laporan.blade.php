@@ -56,7 +56,7 @@
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
                 </ul>
-                <ul class="pagination visible-xs pull-right">
+                <ul class="pagination hidden-xs pull-right">
                     <li><a href="#">«</a></li>
                     <li><a href="#">»</a></li>
                 </ul>

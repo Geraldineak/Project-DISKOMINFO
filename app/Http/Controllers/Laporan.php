@@ -22,7 +22,7 @@ class Laporan extends Controller
 
     public function index_outsource()
     {
-        $data = ModelLaporan::where('nik', Session::get('nik'))->get();
+        $data = ModelLaporan::where('nik', Session::get('nik'))->paginate(10);
         return view('laporan_outsource',compact('data'));
     }
 
@@ -60,7 +60,7 @@ class Laporan extends Controller
         $data->isi = $request->isi;
         $data->nik_atasan = Session::get('nik_atasan');
         $data->save();
-        return redirect()->route('laporan.index')->with('alert-success','Berhasil Memasukkan Data!');
+        return redirect()->route('laporan.outsource')->with('alert-success','Berhasil Memasukkan Data!');
     }
 
     /**

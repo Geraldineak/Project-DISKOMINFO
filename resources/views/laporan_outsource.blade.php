@@ -23,15 +23,23 @@
             <th>No.</th>
             <th>Judul</th>
             <th>Isi</th>
+            <th>Status</th>
         </tr>
     </thead>
     <tbody>
     @php $no = 1; @endphp
     @foreach($data as $datas)
         <tr>
-            <td>{{ $no++ }}</td>
+            <td>{{ $data->currentPage()*10-10+$no++ }}</td>
             <td>{{ $datas->judul }}</td>
             <td>{{ $datas->isi }}</td>
+            <td>@if ($datas->status == 0)
+                    Pending
+                @elseif ($datas->status == 1)
+                    Disetujui
+                @elseif ($datas->status == 2)
+                    Ditolak
+                @endif</td>
             <td>
                 <form action="{{ route('laporan.destroy', $datas->id) }}" method="post">
                     {{ csrf_field() }}
@@ -45,6 +53,7 @@
     </tbody>
 </table>
 </section>
+{{$data->render()}}
 <section class="col-md-12">
     <div class="col-md-12 table-footer">
         <div class="col col-xs-4"></div>
