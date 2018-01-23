@@ -30,7 +30,7 @@
                     <img src="assets/img/user.png" alt="">
                 </div>
                 <ul class="nav navbar-nav profile-header">
-                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">KASI</a></li>
                 </ul>
             </div>
         </div>
