@@ -16,7 +16,7 @@ Route::resource('departemen','Departemen');
 Route::resource('laporan','Laporan');
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
 
 
