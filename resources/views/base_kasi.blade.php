@@ -38,7 +38,7 @@
 </nav>
 <!--Akhir Header-->
 <div class="sidebar-menu">
-<img src="assets/img/yang.png" class="navbar-brand">
+<img src="assets/img/logo.PNG"  width="75">
     <div class="list-menu">
         <ul class="list-group">
             <li class="list-group-item">

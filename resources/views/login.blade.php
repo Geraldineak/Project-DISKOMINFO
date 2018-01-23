@@ -8,10 +8,10 @@
       <form action="{{ url('/loginPost') }}" method="post">
       {{ csrf_field() }}
         <div class="form-group text-center">
-          <img src="assets/img/yang.png" alt="" width="100">
+        <img src="assets/img/logo.PNG"  width="75">
         </div>
         <div class="form-group header-login text-center">
-          <h3><b>S P L K</b></h3>
+          <h3 style="color:#52B3D9"><b>S P L K</b></h3>
           <h2>Sign In</h2>
         </div>
         <!--Alert untuk username-->
