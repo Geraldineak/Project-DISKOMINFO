@@ -1,5 +1,8 @@
 <?php
 
+use App\ModelKontak;
+use Illuminate\Support\Facades\Input;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +13,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//search
+Route::any ( '/search', function () {
+    $q = Input::get('q');
+    $users = ModelKontak::where ( 'nama_lengkap', 'LIKE', '%' . $q . '%' )->get ();
+    if (count ( $users ) > 0)
+        return view ( 'kontak_cari' )->withDetails ($users)->withQuery($q);
+    else
+        return view ( 'kontak_cari' )->withMessage ( 'No Details found. Try to search again !' );
+} );
 
 Route::resource('kontak','Kontak');
 Route::resource('departemen','Departemen');
@@ -35,6 +48,9 @@ Route::get('/laporan-kerja-kasi', function (){
 Route::get('/laporan-kerja', 'Laporan@index_ka');
 Route::get('/laporan-outsource', 'Laporan@index_outsource')->name("laporan.outsource");
 
+
+//kontak
+Route::get('/kontak-cari', 'Kontak@search');
 
 
 Route::get('index-outsource', function (){

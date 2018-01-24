@@ -15,7 +15,7 @@ class Kontak extends Controller
      */
     public function index()
     {
-        $data = ModelKontak::all();
+        $data = ModelKontak::paginate(10);
         return view('kontak',compact('data'));
     }
 
@@ -27,6 +27,13 @@ class Kontak extends Controller
     public function create()
     {
         return view('kontak_create');
+    }
+
+    public function search()
+    {
+        //$search = ModelKontak::where('nama_lengkap', 'LIKE', '%'.$value.'%')->get();
+        //return $search;
+        return view('kontak_cari');
     }
 
     /**

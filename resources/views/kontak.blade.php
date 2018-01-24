@@ -12,36 +12,13 @@
     <a href="{{ URL('kontak/create') }}" class="btn btn-raised btn-primary pull-right">Tambah</a>
     <br>
     
-        <form action="" method="post" class="form" style="width:auto; margin-left:20%">
+        <form action="/search" role="search" method="post" class="form" style="width:auto; margin-left:20%">
+        {{ csrf_field() }}
             <div class="form-group">
                 <label for="">Pencarian</label>
-                <input type="text" name="" id="" class="form-control">
+                <input type="text" name="q" id="" class="form-control">
             </div>
-            <table class="table table-inverse" style="width:auto; margin-left:20%">
-            <thead>
-                <tr>
-                    <th>No.</th>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                    <th>Opsi</th>
-                </tr>
-            </thead>
-                <tbody>
-                    <tr>
-                        <td>1.</td>
-                        <td>Ilham Saputra</td>
-                        <td>Kabid</td>
-                        <td>
-                            <input type="submit" value="Edit" class="btn-edit">
-                            <input type="submit" value="Hapus" class="btn-hapus">
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
-            <div class="form-group">
-                <label for=""></label>
-            </div>
+            <button type="submit" class="btn btn-md btn-primary">Cari Karyawan</button>
         </form>
     </section>
     <section class="col-md-12 table" style="overflow-x: auto;">
@@ -67,7 +44,7 @@
     @php $no = 1; @endphp
     @foreach($data as $datas)
         <tr>
-            <td>{{ $no++ }}</td>
+            <td>{{ $data->currentPage()*10-10+$no++ }}</td>
             <td>{{ $datas->nik }}</td><!--ini kolom barunya-->
             <td>{{ $datas->nama_lengkap }}</td>
             <td>{{ $datas->no_telp }}</td>
@@ -88,6 +65,7 @@
     </tbody>
 </table>
 </section>
+{{$data->links()}}
 <section class="col-md-12">
     <div class="col-md-12 table-footer">
         <div class="col col-xs-4"></div>

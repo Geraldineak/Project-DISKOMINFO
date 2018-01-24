@@ -53,7 +53,7 @@
     </tbody>
 </table>
 </section>
-{{$data->render()}}
+{{$data-links()}}
 <section class="col-md-12">
     <div class="col-md-12 table-footer">
         <div class="col col-xs-4"></div>

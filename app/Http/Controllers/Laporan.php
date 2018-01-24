@@ -16,7 +16,7 @@ class Laporan extends Controller
      */
     public function index()
     {
-        $data = ModelLaporan::all();
+        $data = ModelLaporan::paginate(10);
         return view('laporan',compact('data'));
     }
 

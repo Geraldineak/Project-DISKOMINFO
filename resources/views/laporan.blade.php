@@ -29,7 +29,7 @@
     @php $no = 1; @endphp
     @foreach($data as $datas)
         <tr>
-            <td>{{ $no++ }}</td>
+            <td>{{ $data->currentPage()*10-10+$no++ }}</td>
             <td>{{ $datas->judul }}</td>
             <td>{{ $datas->isi }}</td>
             <td>
@@ -45,6 +45,7 @@
     </tbody>
 </table>
 </section>
+{{$data->links()}}
 <section class="col-md-12">
     <div class="col-md-12 table-footer">
         <div class="col col-xs-4"></div>
